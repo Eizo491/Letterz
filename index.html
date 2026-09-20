@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>just because :)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="heart-field"></div>
+
+<section id="hero">
+  <div class="hero-heart">💗</div>
+  <h1>
+    <span class="hero-line" style="animation-delay:0.05s;">Hey&nbsp;</span><span class="hero-line" style="animation-delay:0.18s;">beautiful,</span><br>
+    <span class="hero-line" style="animation-delay:0.32s;">I&nbsp;made</span> <span class="hero-line" style="animation-delay:0.44s;">you</span> <span class="hero-line" style="animation-delay:0.56s;">a</span> <span class="hero-line" style="animation-delay:0.68s;">little</span> <span class="hero-line" style="animation-delay:0.8s;">website.</span>
+  </h1>
+  <p class="sub">No reason. Just thought you deserved something a little extra today.</p>
+  <div class="scroll-hint">keep scrolling <span class="arrow">↓</span></div>
+</section>
+
+<section id="reasons">
+  <div class="kicker">a very incomplete list</div>
+  <h2>reasons i like you</h2>
+  <div class="card-grid">
+    <div class="reason-card"><span class="reason-num">one</span>the way you laugh at your own jokes before you even finish telling them</div>
+    <div class="reason-card"><span class="reason-num">two</span>you make ordinary Tuesdays feel like an event</div>
+    <div class="reason-card"><span class="reason-num">three</span>your hugs fix like 90% of my problems</div>
+    <div class="reason-card"><span class="reason-num">four</span>you send the weirdest memes at 2am and somehow they're always perfect</div>
+    <div class="reason-card"><span class="reason-num">five</span>you're my favorite person to do absolutely nothing with</div>
+    <div class="reason-card"><span class="reason-num">six</span>just... you. all of it.</div>
+  </div>
+</section>
+
+
+<section id="moments">
+  <div class="kicker">a very unofficial gallery</div>
+  <h2>us, in orbit</h2>
+  <div class="heart-orbit" id="orbit">
+    <div class="orbit-item" style="--angle:0deg">
+      <div class="photo-inner" onclick="openPhoto(0)"><img class="heart-img" src="photo1.jpg" alt="us, photo one"></div>
+    </div>
+    <div class="orbit-item" style="--angle:90deg">
+      <div class="photo-inner" onclick="openPhoto(1)"><img class="heart-img" src="photo2.jpg" alt="us, photo two"></div>
+    </div>
+    <div class="orbit-item" style="--angle:180deg">
+      <div class="photo-inner" onclick="openPhoto(2)"><img class="heart-img" src="photo3.jpg" alt="us, photo three"></div>
+    </div>
+    <div class="orbit-item" style="--angle:270deg">
+      <div class="photo-inner" onclick="openPhoto(3)"><img class="heart-img" src="photo4.jpg" alt="us, photo four"></div>
+    </div>
+    <button class="orbit-center" id="song-btn" type="button"><span class="note-icon">🎵</span>our song</button>
+  </div>
+  <p class="hint">tap a photo to zoom in · tap the heart in the middle to play our song</p>
+  <audio id="bg-audio" src="our-song.mp3" loop preload="auto"></audio>
+  <p class="hint" style="margin-top:10px;"><a href="https://www.youtube.com/results?search_query=Jason%20Mraz%20I%27m%20Yours" target="_blank" rel="noopener" style="color:var(--pink-deep); font-weight:700; text-decoration:underline;">hear the real song (opens YouTube)</a></p>
+
+</section>
+
+<div id="photo-modal">
+  <div class="modal-inner">
+    <button class="close-btn" id="modal-close" type="button" aria-label="Close">✕</button>
+    <img id="modal-img" src="" alt="zoomed photo of us">
+  </div>
+</div>
+
+<section id="surprise">
+  <h2>one more thing</h2>
+  <p class="lead">go on, press it</p>
+  <button id="press-btn">press for a surprise 🎉</button>
+  <div id="surprise-message"></div>
+</section>
+
+<section id="closing">
+  <div class="big-heart">💕</div>
+  <h2>that's it. that's the site.</h2>
+  <p>just wanted you to know you're loved, on a completely random day, for no occasion at all.</p>
+  <div class="signoff">— me</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
